@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:controller="javaapplication1.controller.LoginController" fx:id="main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="imageViewMain" fitHeight="450.0" fitWidth="859.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/login.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="labelCinema" layoutX="667.0" layoutY="14.0" text="CINEMA" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelManagement" layoutX="567.0" layoutY="60.0" text="MANAGEMENT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonNext" layoutX="490.0" layoutY="528.0" mnemonicParsing="false" onAction="#buttonNextClicked" prefHeight="26.0" prefWidth="62.0" style="-fx-background-color: #056559;" text="Next" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <GridPane fx:id="gridPaneLogIn" layoutX="247.0" layoutY="450.0" prefHeight="77.0" prefWidth="306.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="148.20001220703125" minWidth="10.0" prefWidth="104.19998168945312" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="221.80001831054688" minWidth="10.0" prefWidth="201.80001831054688" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="labelUsername" text="username : ">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelPassword" text="password :" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textFieldUsername" GridPane.columnIndex="1" />
+            <PasswordField fx:id="passwordField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <Hyperlink fx:id="hyperlinkCreateAccount" layoutX="253.0" layoutY="560.0" onAction="#hyperlinkCreateAccountClicked" text="If you don't have account, you can create here." underline="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Hyperlink>
+   </children>
+</AnchorPane>

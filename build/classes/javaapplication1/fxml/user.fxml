@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:controller="javaapplication1.controller.UserController" fx:id="main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaapplication1.controller.UserController">
+   <children>
+      <ImageView fx:id="imageViewMain" fitHeight="547.0" fitWidth="821.0" layoutX="-13.0" layoutY="59.0" opacity="0.2" pickOnBounds="true">
+         <image>
+            <Image url="@../image/hall.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="header" prefHeight="59.0" prefWidth="800.0" style="-fx-background-color: #673ab7;">
+         <children>
+            <ImageView fx:id="imageViewCinema" fitHeight="50.0" fitWidth="50.0" layoutX="14.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/cinema.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="labelUser" layoutX="341.0" layoutY="15.0" text="USER PANEL" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="buttonSignOut" alignment="BASELINE_LEFT" layoutX="693.0" layoutY="10.0" mnemonicParsing="false" onAction="#buttonSignOutClicked" prefHeight="38.0" prefWidth="98.0" text="Sign out">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fx:id="imageViewSignOut" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/signout.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button id="1" fx:id="button1" alignment="BASELINE_LEFT" layoutX="14.0" layoutY="123.0" mnemonicParsing="false" onAction="#button1Clicked" prefHeight="50.0" prefWidth="52.0" style="-fx-background-color: #008744;">
+         <graphic>
+            <ImageView fx:id="imageView1" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/seat.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button id="2" fx:id="button2" layoutX="86.0" layoutY="123.0" mnemonicParsing="false" onAction="#button2Clicked" prefHeight="50.0" prefWidth="52.0" style="-fx-background-color: #008744;">
+         <graphic>
+            <ImageView fx:id="imageView2" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/seat.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button id="3" fx:id="button3" layoutX="158.0" layoutY="123.0" mnemonicParsing="false" onAction="#button3Clicked" prefHeight="50.0" prefWidth="52.0" style="-fx-background-color: #008744;">
+         <graphic>
+            <ImageView fx:id="imageView3" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/seat.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button id="4" fx:id="button4" layoutX="230.0" layoutY="123.0" mnemonicParsing="false" onAction="#button4Clicked" prefHeight="50.0" prefWidth="52.0" style="-fx-background-color: #008744;">
+         <graphic>
+            <ImageView fx:id="imageView4" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/seat.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button id="5" fx:id="button5" layoutX="19.0" layoutY="187.0" mnemonicParsing="false" onAction="#button5Clicked" prefHeight="50.0" prefWidth="52.0" style="-fx-background-color: #008744;">
+         <graphic>
+            <ImageView fx:id="imageView5" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/seat.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button id="6" fx:id="button6" layoutX="91.0" layoutY="187.0" mnemonicParsing="false" onAction="#button6Clicked" prefHeight="50.0" prefWidth="52.0" style="-fx-background-color: #008744;">
+         <graphic>
+            <ImageView fx:id="imageView6" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/seat.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button id="7" fx:id="button7" layoutX="163.0" layoutY="187.0" mnemonicParsing="false" onAction="#button7Clicked" prefHeight="50.0" prefWidth="52.0" style="-fx-background-color: #008744;">
+         <graphic>
+            <ImageView fx:id="imageView7" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/seat.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button id="8" fx:id="button8" layoutX="235.0" layoutY="187.0" mnemonicParsing="false" onAction="#button8Clicked" prefHeight="50.0" prefWidth="52.0" style="-fx-background-color: #008744;">
+         <graphic>
+            <ImageView fx:id="imageView8" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/seat.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button id="9" fx:id="button9" layoutX="24.0" layoutY="254.0" mnemonicParsing="false" onAction="#button9Clicked" prefHeight="50.0" prefWidth="52.0" style="-fx-background-color: #008744;">
+         <graphic>
+            <ImageView fx:id="imageView9" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/seat.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button id="10" fx:id="button10" layoutX="96.0" layoutY="254.0" mnemonicParsing="false" onAction="#button10Clicked" prefHeight="50.0" prefWidth="52.0" style="-fx-background-color: #008744;">
+         <graphic>
+            <ImageView fx:id="imageView10" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/seat.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button id="11" fx:id="button11" layoutX="168.0" layoutY="254.0" mnemonicParsing="false" onAction="#button11Clicked" prefHeight="50.0" prefWidth="52.0" style="-fx-background-color: #008744;">
+         <graphic>
+            <ImageView fx:id="imageView11" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/seat.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button id="12" fx:id="button12" layoutX="240.0" layoutY="254.0" mnemonicParsing="false" onAction="#button12Clicked" prefHeight="50.0" prefWidth="52.0" style="-fx-background-color: #008744;">
+         <graphic>
+            <ImageView fx:id="imageView12" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/seat.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button id="13" fx:id="button13" layoutX="29.0" layoutY="318.0" mnemonicParsing="false" onAction="#button13Clicked" prefHeight="50.0" prefWidth="52.0" style="-fx-background-color: #008744;">
+         <graphic>
+            <ImageView fx:id="imageView13" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/seat.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button id="14" fx:id="button14" layoutX="101.0" layoutY="318.0" mnemonicParsing="false" onAction="#button14Clicked" prefHeight="50.0" prefWidth="52.0" style="-fx-background-color: #008744;">
+         <graphic>
+            <ImageView fx:id="imageView14" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/seat.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button id="15" fx:id="button15" layoutX="173.0" layoutY="318.0" mnemonicParsing="false" onAction="#button15Clicked" prefHeight="50.0" prefWidth="52.0" style="-fx-background-color: #008744;">
+         <graphic>
+            <ImageView fx:id="imageView15" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/seat.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button id="16" fx:id="button16" layoutX="245.0" layoutY="318.0" mnemonicParsing="false" onAction="#button16Clicked" prefHeight="50.0" prefWidth="52.0" style="-fx-background-color: #008744;">
+         <graphic>
+            <ImageView fx:id="imageView16" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/seat.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button id="17" fx:id="button17" layoutX="34.0" layoutY="382.0" mnemonicParsing="false" onAction="#button17Clicked" prefHeight="50.0" prefWidth="52.0" style="-fx-background-color: #008744;">
+         <graphic>
+            <ImageView fx:id="imageView17" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/seat.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button id="18" fx:id="button18" layoutX="106.0" layoutY="382.0" mnemonicParsing="false" onAction="#button18Clicked" prefHeight="50.0" prefWidth="52.0" style="-fx-background-color: #008744;">
+         <graphic>
+            <ImageView fx:id="imageView18" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/seat.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button id="19" fx:id="button19" layoutX="178.0" layoutY="382.0" mnemonicParsing="false" onAction="#button19Clicked" prefHeight="50.0" prefWidth="52.0" style="-fx-background-color: #008744;">
+         <graphic>
+            <ImageView fx:id="imageView19" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/seat.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button id="20" fx:id="button20" layoutX="250.0" layoutY="382.0" mnemonicParsing="false" onAction="#button20Clicked" prefHeight="50.0" prefWidth="52.0" style="-fx-background-color: #008744;">
+         <graphic>
+            <ImageView fx:id="imageView20" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/seat.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="13.0" layoutY="86.0" text="Take a seat.">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableViewAddMovies" layoutX="339.0" layoutY="123.0" prefHeight="314.0" prefWidth="447.0" tableMenuButtonVisible="true">
+         <columns>
+            <TableColumn fx:id="tableColumnTitle" editable="false" prefWidth="238.39996337890625" sortable="false" text="Title" />
+            <TableColumn fx:id="tableColumnGenre" editable="false" minWidth="0.0" prefWidth="61.60003662109375" sortable="false" text="Genre" />
+            <TableColumn fx:id="tableColumnDuration" editable="false" prefWidth="57.59991455078125" sortable="false" text="Duration" />
+            <TableColumn fx:id="tableColumnDate" editable="false" minWidth="0.0" prefWidth="90.4000244140625" sortable="false" text="Date" />
+         </columns>
+      </TableView>
+      <Label layoutX="339.0" layoutY="86.0" text="Choose a movie">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonOk" alignment="CENTER" graphicTextGap="20.0" layoutX="699.0" layoutY="500.0" mnemonicParsing="false" onAction="#buttonOkClicked" prefHeight="26.0" prefWidth="86.0" style="-fx-background-color: #01875f;" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fx:id="imageViewOk" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/ok.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <GridPane fx:id="gridPaneMovie" layoutX="17.0" layoutY="481.0" prefHeight="91.0" prefWidth="281.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="136.199951171875" minWidth="10.0" prefWidth="94.5999755859375" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="187.4000244140625" minWidth="10.0" prefWidth="187.4000244140625" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="labelMovieName" text="Movie Name :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelSeatNumber" text="Seat Number : " GridPane.rowIndex="1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelMovieDate" text="Movie Date :" GridPane.rowIndex="2">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelChoosenName" prefHeight="16.0" prefWidth="204.0" text="--" GridPane.columnIndex="1">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelChoosenSeat" prefHeight="16.0" prefWidth="204.0" text="--" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="lavelChoosenDate" prefHeight="16.0" prefWidth="204.0" text="--" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <Separator fx:id="separator" layoutX="16.0" layoutY="460.0" prefHeight="0.0" prefWidth="294.0" />
+      <GridPane fx:id="gridPaneInformation" layoutX="339.0" layoutY="478.0" prefHeight="61.0" prefWidth="318.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="154.20001220703125" minWidth="10.0" prefWidth="86.20001220703125" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="250.199951171875" minWidth="10.0" prefWidth="231.79998779296875" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="labelName" text="Your name :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelMail" text="E-mail :" GridPane.rowIndex="1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textFieldName" GridPane.columnIndex="1" />
+            <TextField fx:id="textFieldMail" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <Label fx:id="labelInformation" layoutX="339.0" layoutY="450.0" text="Do not forget to enter your seats, movie, name and e-mail address.">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:controller="javaapplication1.controller.DashboardController" fx:id="mainPage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane fx:id="leftSide" prefHeight="600.0" prefWidth="210.0" style="-fx-background-color: #000000;">
+         <children>
+            <Label fx:id="labelWelcome" layoutX="66.0" layoutY="103.0" text="Welcome" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelAdmin" layoutX="86.0" layoutY="127.0" text="Admin" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="buttonDashboard" alignment="BASELINE_LEFT" layoutX="25.0" layoutY="197.0" mnemonicParsing="false" onAction="#buttonDashboardClicked" prefHeight="50.0" prefWidth="159.0" style="-fx-background-color: #ec7532;" text="Dashboard" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fx:id="imageViewDashboard" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/dashboard.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="buttonAdd" alignment="BASELINE_LEFT" layoutX="25.0" layoutY="256.0" mnemonicParsing="false" onAction="#buttonAddClicked" prefHeight="50.0" prefWidth="159.0" style="-fx-background-color: #ffa700;" text="Add Movies" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fx:id="imageViewAddMovies" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/add.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="buttonMovies" alignment="BASELINE_LEFT" layoutX="25.0" layoutY="318.0" mnemonicParsing="false" onAction="#buttonMoviesClicked" prefHeight="50.0" prefWidth="159.0" style="-fx-background-color: #ffa700;" text="Movies" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fx:id="imageViewMovies" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/movies.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="buttonEdit" alignment="BASELINE_LEFT" layoutX="25.0" layoutY="380.0" mnemonicParsing="false" onAction="#buttonEditClicked" prefHeight="50.0" prefWidth="159.0" style="-fx-background-color: #ffa700;" text="Edit Movies" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fx:id="imageViewEditMovies" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/edit.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="buttonCustomers" alignment="BASELINE_LEFT" layoutX="25.0" layoutY="441.0" mnemonicParsing="false" onAction="#buttonCustomersClicked" prefHeight="50.0" prefWidth="159.0" style="-fx-background-color: #ffa700;" text="Customers" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fx:id="imageViewCustomers" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/customers.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="buttonSignOut" alignment="BASELINE_LEFT" layoutX="97.0" layoutY="547.0" mnemonicParsing="false" onAction="#buttonSignOutClicked" prefHeight="38.0" prefWidth="98.0" style="-fx-background-color: white;" text="Sign out">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fx:id="imageViewSignOut" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/signout.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fx:id="imageViewAdmin" fitHeight="80.0" fitWidth="80.0" layoutX="70.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/admin.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label fx:id="labelDashboard" layoutX="228.0" layoutY="14.0" text="DASHBOARD">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Separator fx:id="seperator" layoutX="228.0" layoutY="48.0" prefHeight="0.0" prefWidth="552.0" />
+      <AnchorPane fx:id="anchorPaneTickets" layoutX="228.0" layoutY="268.0" prefHeight="138.0" prefWidth="552.0" style="-fx-background-color: #2ab7ca;">
+         <children>
+            <Label fx:id="labelTotalSoldTickets" layoutX="290.0" layoutY="84.0" text="TOTAL CUSTOMER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="imageViewTotalSoldTickets" fitHeight="100.0" fitWidth="100.0" layoutX="14.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/ticket.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="totalCustomer" layoutX="506.0" layoutY="19.0" text="0" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="43.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="anchorPaneMovies" layoutX="228.0" layoutY="447.0" prefHeight="138.0" prefWidth="552.0" style="-fx-background-color: #fe4a49;">
+         <children>
+            <Label fx:id="labelMovies" layoutX="431.0" layoutY="84.0" text="MOVIES" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="imageViewMoviess" fitHeight="100.0" fitWidth="100.0" layoutX="14.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/moviess.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="totalMovie" layoutX="513.0" layoutY="22.0" text="0" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="43.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="imageViewStudents" fitHeight="138.0" fitWidth="552.0" layoutX="228.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/students.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
