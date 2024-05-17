@@ -20,6 +20,15 @@ screenshots :
 ![16](https://github.com/omerrmanav/Cinema-Management-Project/assets/129552867/841b988d-5d1b-4a2e-bcc8-cc218c94f8f0)
 ![17](https://github.com/omerrmanav/Cinema-Management-Project/assets/129552867/ac2d9845-a6c9-4389-abb5-9ae34766b53f)
 
+database - sql : 
 
-
-
+![SqlConnection](https://github.com/omerrmanav/Cinema-Management-Project/assets/129552867/333036d2-4884-4ed1-a0e9-801423b3fb09)
+![Dashboard](https://github.com/omerrmanav/Cinema-Management-Project/assets/129552867/4eec1dc8-c068-4352-a66f-2a7a017df839)
+![AddMovie](https://github.com/omerrmanav/Cinema-Management-Project/assets/129552867/e6ef057a-b2c5-46a9-ad37-40e2c002a167)
+![Delete Movie](https://github.com/omerrmanav/Cinema-Management-Project/assets/129552867/3d68b1cd-2312-44a3-8296-3719353695b6)
+![Login](https://github.com/omerrmanav/Cinema-Management-Project/assets/129552867/a068f6b9-8f0d-4e92-96fa-9d7e8e060d23)
+![MovieSaved](https://github.com/omerrmanav/Cinema-Management-Project/assets/129552867/f260f121-c5a7-45ad-9838-9fc50a099ebc)
+![Save Admin](https://github.com/omerrmanav/Cinema-Management-Project/assets/129552867/687d7bde-4e8a-4f9b-8d96-4c5b8191b441)
+![ShowCustomers](https://github.com/omerrmanav/Cinema-Management-Project/assets/129552867/2fe7fcac-7ad9-405b-8672-1f3f90dd873d)
+![Ticket](https://github.com/omerrmanav/Cinema-Management-Project/assets/129552867/b81934fa-81a6-4b91-92e5-7c7cd8db7c7c)
+![Update Movie](https://github.com/omerrmanav/Cinema-Management-Project/assets/129552867/e35de4ae-fe65-4def-ae0e-b48f8fc8c532)
